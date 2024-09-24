@@ -5,6 +5,14 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.util.HashSet;  // Import nécessaire pour utiliser HashSet
+import java.util.Collections;  // Import pour addAll
+import java.util.Set;  // Import de l'interface Set
+
+
+import java.util.HashSet;
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -40,6 +48,14 @@ class CalculatorTest {
     void devrait_diviser_10_par_2()
     {
         assertEquals(5,calculator.divide(10,2));
+    }
+
+    @Test
+    void devrait_separer_1145()
+    {
+        Set<Integer> set = new HashSet<>();
+        Collections.addAll(set, 1, 4, 5);
+        assertEquals(set,Calculator.ensembleChiffres(1145));
     }
 
     @AfterEach
