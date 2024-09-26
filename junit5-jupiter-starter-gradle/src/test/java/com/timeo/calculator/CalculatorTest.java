@@ -51,6 +51,22 @@ class CalculatorTest {
     }
 
     @Test
+    void devrait_diviser_10_par_0_et_error()
+    {
+        try
+        {
+            assertEquals(0,calculator.divide(10,0));
+        }
+        catch (ArithmeticException  e)
+        {
+            System.out.println("pas de div par 0");
+        }
+
+
+
+    }
+
+    @Test
     void devrait_separer_1145()
     {
         Set<Integer> set = new HashSet<>();

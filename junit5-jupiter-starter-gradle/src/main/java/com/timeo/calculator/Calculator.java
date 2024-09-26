@@ -13,7 +13,7 @@ public class Calculator {
 
     public static int divide(int opG, int opD)
     {
-        return opG/opD;
+        return  opG/opD;
     }
 
     public static Set<Integer> ensembleChiffres(int pNombre)
