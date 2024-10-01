@@ -59,7 +59,7 @@ class CalculatorTest {
         }
         catch (ArithmeticException  e)
         {
-            System.out.println("pas de div par 0");
+            //System.out.println("pas de div par 0");
         }
 
 
